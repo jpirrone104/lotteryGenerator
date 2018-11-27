@@ -44,6 +44,16 @@
             });
 
 
+$(document).ready(function () {
+
+$("#random-button").on("click", function () {
+    var random = Math.floor(Math.random() * 100000000) + 111111111;
+    var newDiv = ("<div>");
+    $("#random-number").prepend("<div>" +random + "</div>")
+    console.log(random);
+});
+
+
    });
 
     </script>
